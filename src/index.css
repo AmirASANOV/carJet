@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #F05A00;
+  --color-brand-dark: #D94E00;
+  --color-brand-light: #FF6B1A;
+  --color-brand-tint: #FFF4EE;
+  --color-brand-pale: #FFE4CC;
+
+  --color-ink: #1A1A1A;
+  --color-ink-80: #2D2D2D;
+  --color-ink-60: #4B4B4B;
+  --color-ink-40: #737373;
+  --color-ink-20: #ADADAD;
+  --color-ink-10: #D6D6D6;
+
+  --color-surface: #F8F8F8;
+  --color-surface-2: #F1F1F1;
+  --color-wire: #E8E8E8;
+
+  --color-ok: #16A34A;
+  --color-ok-tint: #DCFCE7;
+  --color-warn: #D97706;
+  --color-warn-tint: #FEF3C7;
+  --color-bad: #DC2626;
+  --color-bad-tint: #FEE2E2;
+
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-sans: "Barlow", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*::-webkit-scrollbar { width: 5px; height: 5px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 99px; }
+* { scrollbar-width: thin; scrollbar-color: #d4d4d4 transparent; }
+
+.font-display { font-family: var(--font-display); }
+.font-sans-auto { font-family: var(--font-sans); }
